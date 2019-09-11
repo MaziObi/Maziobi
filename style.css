@@ -1,0 +1,47 @@
+body{
+	background-image: url("./LandingStock_image_03.jpg");
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center center;
+background-attachment: fixed; 
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+ 
+.hero {
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+ 
+.hero .container-fluid {
+  z-index: 10;
+}
+ 
+.btn {
+    padding: 03px 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.btn { 
+background-color: #FF0000;
+color:#2F3E48;
+border-color: #FF0000;
+
+}
